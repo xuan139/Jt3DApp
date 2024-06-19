@@ -1,6 +1,14 @@
+
+//  MainViewController.swift
+//  Jt3DApp
+//
+//  Created by XUAN LI on 6/19/24.
+//
+
 import UIKit
 import PhotosUI
 import AVKit
+import AVFoundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -8,7 +16,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var tableView: UITableView!
     var phpPickerHelper = PHPickerHelper()
     var documentPickerHandler = DocumentPickerHandler()
-    
     
     var selectedVideoURL: URL?
     var selectedDocumentURL: URL?
@@ -20,27 +27,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         initPicker()
     }
     
-    func initPicker(){
-        phpPickerHelper.onPicked = { [weak self] url in
-            self?.selectedVideoURL = url
-            if let videoURL = url {
-                self?.playVideo(with: videoURL)
-            } else {
-                print("No URL selected")
-            }
-        }
-        
-        documentPickerHandler.onPickedURLs = { [weak self] urls in
-            for url in urls {
-                self?.selectedDocumentURL = url
-                self?.playVideo(with: url)
-            }
-        }
-    }
-    
     func setupUI(){
-        title = "Navigation Demo"
-        
+        title = "Menu"
+        self.view.backgroundColor = .white
         // Initialize the table view
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.delegate = self
@@ -49,10 +38,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -120)
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50)
         ])
     }
     
@@ -76,6 +65,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    
+    //    videoPlayerView.videoURL = videoURL
+    func initPicker(){
+        phpPickerHelper.onPicked = { [weak self] url in
+            self?.selectedVideoURL = url
+            if let videoURL = url {
+                let playerVC = JT3DVideoPlayerViewController()
+                playerVC.videoURL = videoURL
+                  // Present the player view controller
+                if let navigationController = self?.navigationController {
+                    navigationController.pushViewController(playerVC, animated: true)
+                } else {
+                    print("Current view controller is not embedded in a navigation controller.")
+                }
+                print("No URL selected")
+            }
+        }
+        
+        documentPickerHandler.onPickedURLs = { [weak self] urls in
+            for url in urls {
+                self?.selectedDocumentURL = url
+                
+                let playerVC = JT3DVideoPlayerViewController()
+                playerVC.videoURL = url
+                  
+                if let navigationController = self?.navigationController {
+                    navigationController.pushViewController(playerVC, animated: true)
+                } else {
+                    print("Current view controller is not embedded in a navigation controller.")
+                }
+                
+            }
+        }
+    }
+    
     private func playVideo(with url: URL) {
         let playerViewController = AVPlayerViewController()
         playerViewController.player = AVPlayer(url: url)
@@ -85,3 +109,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 }
+
+

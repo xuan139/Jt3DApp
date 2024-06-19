@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B3BCB7FD2C22912200F0233B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB7FC2C22912200F0233B /* AppDelegate.swift */; };
 		B3BCB7FF2C22912200F0233B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB7FE2C22912200F0233B /* SceneDelegate.swift */; };
-		B3BCB8012C22912200F0233B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8002C22912200F0233B /* ViewController.swift */; };
 		B3BCB8042C22912200F0233B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3BCB8032C22912200F0233B /* Base */; };
 		B3BCB8062C22912400F0233B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BCB8052C22912400F0233B /* Assets.xcassets */; };
 		B3BCB8092C22912400F0233B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3BCB8082C22912400F0233B /* Base */; };
@@ -17,7 +16,9 @@
 		B3BCB81E2C22912500F0233B /* Jt3DAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB81D2C22912500F0233B /* Jt3DAppUITests.swift */; };
 		B3BCB8202C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */; };
 		B3BCB82D2C22981E00F0233B /* PickerViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */; };
-		B3BCB82F2C230C2200F0233B /*  DocumentPickerHandler..swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB82E2C230C2200F0233B /*  DocumentPickerHandler..swift */; };
+		B3BCB8322C23196B00F0233B /* JT3DPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8312C23196B00F0233B /* JT3DPlayer.swift */; };
+		B3BCB8362C2336DD00F0233B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8352C2336DD00F0233B /* ViewController.swift */; };
+		B3BCB8742C23488000F0233B /* DocumentPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		B3BCB7F92C22912200F0233B /* Jt3DApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jt3DApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BCB7FC2C22912200F0233B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BCB7FE2C22912200F0233B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3BCB8002C22912200F0233B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3BCB8032C22912200F0233B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3BCB8052C22912400F0233B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3BCB8082C22912400F0233B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,9 @@
 		B3BCB81D2C22912500F0233B /* Jt3DAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jt3DAppUITests.swift; sourceTree = "<group>"; };
 		B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jt3DAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift.swift; sourceTree = "<group>"; };
-		B3BCB82E2C230C2200F0233B /*  DocumentPickerHandler..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " DocumentPickerHandler..swift"; sourceTree = "<group>"; };
+		B3BCB8312C23196B00F0233B /* JT3DPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JT3DPlayer.swift; sourceTree = "<group>"; };
+		B3BCB8352C2336DD00F0233B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +107,10 @@
 			children = (
 				B3BCB7FC2C22912200F0233B /* AppDelegate.swift */,
 				B3BCB7FE2C22912200F0233B /* SceneDelegate.swift */,
-				B3BCB8002C22912200F0233B /* ViewController.swift */,
 				B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */,
-				B3BCB82E2C230C2200F0233B /*  DocumentPickerHandler..swift */,
-				B3BCB8302C23147B00F0233B /* picker */,
+				B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */,
+				B3BCB8312C23196B00F0233B /* JT3DPlayer.swift */,
+				B3BCB8352C2336DD00F0233B /* ViewController.swift */,
 				B3BCB8022C22912200F0233B /* Main.storyboard */,
 				B3BCB8052C22912400F0233B /* Assets.xcassets */,
 				B3BCB8072C22912400F0233B /* LaunchScreen.storyboard */,
@@ -132,13 +134,6 @@
 				B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */,
 			);
 			path = Jt3DAppUITests;
-			sourceTree = "<group>";
-		};
-		B3BCB8302C23147B00F0233B /* picker */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3BCB8012C22912200F0233B /* ViewController.swift in Sources */,
+				B3BCB8742C23488000F0233B /* DocumentPickerHandler.swift in Sources */,
 				B3BCB7FD2C22912200F0233B /* AppDelegate.swift in Sources */,
 				B3BCB82D2C22981E00F0233B /* PickerViewController.swift.swift in Sources */,
+				B3BCB8322C23196B00F0233B /* JT3DPlayer.swift in Sources */,
+				B3BCB8362C2336DD00F0233B /* ViewController.swift in Sources */,
 				B3BCB7FF2C22912200F0233B /* SceneDelegate.swift in Sources */,
-				B3BCB82F2C230C2200F0233B /*  DocumentPickerHandler..swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
