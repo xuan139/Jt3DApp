@@ -16,6 +16,8 @@
 		B3BCB8142C22912500F0233B /* Jt3DAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8132C22912500F0233B /* Jt3DAppTests.swift */; };
 		B3BCB81E2C22912500F0233B /* Jt3DAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB81D2C22912500F0233B /* Jt3DAppUITests.swift */; };
 		B3BCB8202C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */; };
+		B3BCB82D2C22981E00F0233B /* PickerViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */; };
+		B3BCB82F2C230C2200F0233B /*  DocumentPickerHandler..swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB82E2C230C2200F0233B /*  DocumentPickerHandler..swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B3BCB8192C22912500F0233B /* Jt3DAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jt3DAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BCB81D2C22912500F0233B /* Jt3DAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jt3DAppUITests.swift; sourceTree = "<group>"; };
 		B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jt3DAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift.swift; sourceTree = "<group>"; };
+		B3BCB82E2C230C2200F0233B /*  DocumentPickerHandler..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " DocumentPickerHandler..swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				B3BCB7FC2C22912200F0233B /* AppDelegate.swift */,
 				B3BCB7FE2C22912200F0233B /* SceneDelegate.swift */,
 				B3BCB8002C22912200F0233B /* ViewController.swift */,
+				B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */,
+				B3BCB82E2C230C2200F0233B /*  DocumentPickerHandler..swift */,
 				B3BCB8022C22912200F0233B /* Main.storyboard */,
 				B3BCB8052C22912400F0233B /* Assets.xcassets */,
 				B3BCB8072C22912400F0233B /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			files = (
 				B3BCB8012C22912200F0233B /* ViewController.swift in Sources */,
 				B3BCB7FD2C22912200F0233B /* AppDelegate.swift in Sources */,
+				B3BCB82D2C22981E00F0233B /* PickerViewController.swift.swift in Sources */,
 				B3BCB7FF2C22912200F0233B /* SceneDelegate.swift in Sources */,
+				B3BCB82F2C230C2200F0233B /*  DocumentPickerHandler..swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,8 +456,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +465,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xuan.Jt3DApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,8 +487,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,9 +496,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xuan.Jt3DApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
