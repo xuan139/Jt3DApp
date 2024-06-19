@@ -4,7 +4,7 @@ import AVKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let menuItems = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+    let menuItems = ["Photos", "Documents", "Tools", "History", "Exit"]
     var tableView: UITableView!
     var phpPickerHelper = PHPickerHelper()
     var documentPickerHandler = DocumentPickerHandler()
