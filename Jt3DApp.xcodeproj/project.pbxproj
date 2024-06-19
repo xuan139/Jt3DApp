@@ -15,10 +15,10 @@
 		B3BCB8142C22912500F0233B /* Jt3DAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8132C22912500F0233B /* Jt3DAppTests.swift */; };
 		B3BCB81E2C22912500F0233B /* Jt3DAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB81D2C22912500F0233B /* Jt3DAppUITests.swift */; };
 		B3BCB8202C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */; };
-		B3BCB82D2C22981E00F0233B /* PickerViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */; };
 		B3BCB8322C23196B00F0233B /* JT3DPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8312C23196B00F0233B /* JT3DPlayer.swift */; };
 		B3BCB8362C2336DD00F0233B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8352C2336DD00F0233B /* ViewController.swift */; };
 		B3BCB8742C23488000F0233B /* DocumentPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */; };
+		B3BCB8762C23539C00F0233B /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8752C23539C00F0233B /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +51,10 @@
 		B3BCB8192C22912500F0233B /* Jt3DAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jt3DAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BCB81D2C22912500F0233B /* Jt3DAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jt3DAppUITests.swift; sourceTree = "<group>"; };
 		B3BCB81F2C22912500F0233B /* Jt3DAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jt3DAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift.swift; sourceTree = "<group>"; };
 		B3BCB8312C23196B00F0233B /* JT3DPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JT3DPlayer.swift; sourceTree = "<group>"; };
 		B3BCB8352C2336DD00F0233B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerHandler.swift; sourceTree = "<group>"; };
+		B3BCB8752C23539C00F0233B /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 			children = (
 				B3BCB7FC2C22912200F0233B /* AppDelegate.swift */,
 				B3BCB7FE2C22912200F0233B /* SceneDelegate.swift */,
-				B3BCB82C2C22981E00F0233B /* PickerViewController.swift.swift */,
 				B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */,
+				B3BCB8752C23539C00F0233B /* PickerViewController.swift */,
 				B3BCB8312C23196B00F0233B /* JT3DPlayer.swift */,
 				B3BCB8352C2336DD00F0233B /* ViewController.swift */,
 				B3BCB8022C22912200F0233B /* Main.storyboard */,
@@ -269,9 +269,9 @@
 			files = (
 				B3BCB8742C23488000F0233B /* DocumentPickerHandler.swift in Sources */,
 				B3BCB7FD2C22912200F0233B /* AppDelegate.swift in Sources */,
-				B3BCB82D2C22981E00F0233B /* PickerViewController.swift.swift in Sources */,
 				B3BCB8322C23196B00F0233B /* JT3DPlayer.swift in Sources */,
 				B3BCB8362C2336DD00F0233B /* ViewController.swift in Sources */,
+				B3BCB8762C23539C00F0233B /* PickerViewController.swift in Sources */,
 				B3BCB7FF2C22912200F0233B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
