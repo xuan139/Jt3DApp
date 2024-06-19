@@ -83,19 +83,21 @@ class JT3DVideoPlayerViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             playPauseButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            playPauseButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            playPauseButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
             
-            progressSlider.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            progressSlider.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            progressSlider.bottomAnchor.constraint(equalTo: playPauseButton.topAnchor, constant: -20),
+            progressSlider.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            progressSlider.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            progressSlider.bottomAnchor.constraint(equalTo: playPauseButton.topAnchor, constant: -2),
             
-            currentTimeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            currentTimeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             currentTimeLabel.centerYAnchor.constraint(equalTo: progressSlider.centerYAnchor),
             
-            durationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            durationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             durationLabel.centerYAnchor.constraint(equalTo: progressSlider.centerYAnchor)
         ])
     }
+    
+    
     
     private func addPeriodicTimeObserver() {
         let interval = CMTime(seconds: 1, preferredTimescale: 600)
@@ -115,11 +117,16 @@ class JT3DVideoPlayerViewController: UIViewController {
     }
     
     private func formatTime(seconds: Double) -> String {
-        let totalSeconds = Int(seconds)
+        guard !seconds.isNaN && !seconds.isInfinite else {
+            return "00:00" // Handle NaN or infinite case gracefully
+        }
+        
+        let totalSeconds = Int(seconds.rounded()) // Round to nearest whole number
         let minutes = totalSeconds / 60
         let seconds = totalSeconds % 60
         return String(format: "%02d:%02d", minutes, seconds)
     }
+
     
     @objc private func playPauseButtonTapped() {
         if player?.timeControlStatus == .playing {
