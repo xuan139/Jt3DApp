@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var tableView: UITableView!
     var phpPickerHelper = PHPickerHelper()
     var documentPickerHandler = DocumentPickerHandler()
+    var documentsViewController = DocumentsViewController()
     
     var selectedVideoURL: URL?
     var selectedDocumentURL: URL?
@@ -60,8 +61,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if indexPath.row == 0 {
             phpPickerHelper.presentPicker(from: self, filter: nil)
+            
         }else if indexPath.row == 1{
             documentPickerHandler.presentDocumentPicker(from: self)
+            
+        }else if indexPath.row == 2{
+            print("tools.")
+            
+        }else if indexPath.row == 3{
+            
+            if let navigationController = self.navigationController {
+                navigationController.pushViewController(documentsViewController, animated: true)
+            } else {
+                print("Current view controller is not embedded in a navigation controller.")
+            }
+        }
+        else if indexPath.row == 4{
+            let alert = UIAlertController(title: "Exit App", message: "Are you sure you want to exit?", preferredStyle: .alert)
+              alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+              alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { _ in
+                  exit(0)
+              }))
+              present(alert, animated: true, completion: nil)
+            
         }
     }
     

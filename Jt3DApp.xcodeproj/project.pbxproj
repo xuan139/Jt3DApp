@@ -19,6 +19,7 @@
 		B3BCB8742C23488000F0233B /* DocumentPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */; };
 		B3BCB8762C23539C00F0233B /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8752C23539C00F0233B /* PickerViewController.swift */; };
 		B3BCB8782C2354EE00F0233B /* JT3DVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8772C2354EE00F0233B /* JT3DVideoPlayerViewController.swift */; };
+		B3BCB87A2C239BED00F0233B /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCB8792C239BED00F0233B /* DocumentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B3BCB8732C23488000F0233B /* DocumentPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerHandler.swift; sourceTree = "<group>"; };
 		B3BCB8752C23539C00F0233B /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		B3BCB8772C2354EE00F0233B /* JT3DVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JT3DVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		B3BCB8792C239BED00F0233B /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				B3BCB8752C23539C00F0233B /* PickerViewController.swift */,
 				B3BCB8352C2336DD00F0233B /* ViewController.swift */,
 				B3BCB8772C2354EE00F0233B /* JT3DVideoPlayerViewController.swift */,
+				B3BCB8792C239BED00F0233B /* DocumentsViewController.swift */,
 				B3BCB8022C22912200F0233B /* Main.storyboard */,
 				B3BCB8052C22912400F0233B /* Assets.xcassets */,
 				B3BCB8072C22912400F0233B /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				B3BCB8362C2336DD00F0233B /* ViewController.swift in Sources */,
 				B3BCB8762C23539C00F0233B /* PickerViewController.swift in Sources */,
 				B3BCB7FF2C22912200F0233B /* SceneDelegate.swift in Sources */,
+				B3BCB87A2C239BED00F0233B /* DocumentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
